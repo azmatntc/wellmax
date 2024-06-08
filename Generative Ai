@@ -60,3 +60,750 @@ To create a website for your WELLMAX LED bulbs business, here are the key sectio
 - **Analytics**: Integrate analytics tools to track website performance and user behavior.
 
 By including these sections and features, you'll create a comprehensive and user-friendly website that effectively showcases your WELLMAX LED products and supports your business growth both online and offline.
+
+
+Website Prototype
+Certainly! To create a website prototype based on a sitemap, I'll outline a basic structure for you. Since I don't have the specific details of your sitemap, I'll provide a general example that you can customize according to your needs.
+
+Here's a simple prototype structure for a website:
+
+```plaintext
+Home Page
+|-- About Us
+|   |-- Our Mission
+|   |-- Our Team
+|   |-- Contact Information
+|-- Services
+|   |-- Service One
+|   |-- Service Two
+|   |-- Service Three
+|-- Portfolio
+|   |-- Project One
+|   |-- Project Two
+|   |-- Project Three
+|-- Blog
+|   |-- Article One
+|   |-- Article Two
+|   |-- Article Three
+|-- Contact Us
+    |-- Location
+    |-- Inquiry Form
+    |-- FAQs
+```
+
+For each page, you would typically include:
+
+- **Navigation Bar**: To allow users to easily navigate through the site.
+- **Content Area**: Where the main content of each page will be displayed.
+- **Footer**: With links to privacy policy, terms of service, social media, etc.
+
+If you're using Django, you can start by creating a new project and then add apps for each of the main sections of your sitemap. For example:
+
+```bash
+django-admin startproject mysite
+cd mysite
+python manage.py startapp about
+python manage.py startapp services
+python manage.py startapp portfolio
+python manage.py startapp blog
+python manage.py startapp contact
+```
+
+Then, you can create views, templates, and models as needed for each app to represent the pages and content outlined in your sitemap.
+
+Remember to style your pages with CSS to match your brand and design preferences. If you need more detailed help with any specific part of this process, feel free to ask!
+
+
+Absolutely, Malik. Here's a text-based prototype for your website, outlining the key elements on each page:
+
+### Home Page
+- **Header**: Logo, navigation menu, shopping cart icon.
+- **Banner**: A rotating carousel featuring top products and promotions.
+- **Featured Products**: A selection of highlighted LED products.
+- **About Us Teaser**: A brief introduction to your company with a link to the full About Us page.
+- **Testimonials**: Snippets from customer reviews.
+- **Footer**: Contact information, social media links, newsletter sign-up, and legal links (Privacy Policy, Terms of Service).
+
+### About Us Page
+- **Company Overview**: Detailed history and mission of your business.
+- **Meet the Team**: Photos and bios of your team members.
+- **Our Values**: Core values and commitments of your brand.
+- **Contact Information**: Detailed address, phone number, and email.
+
+### Products Page
+- **Product Categories**: List of categories (e.g., LED Bulbs, Smart Lighting).
+- **Individual Product Listings**: Each with an image, brief description, and link to the detailed product page.
+- **Filters and Sorting Options**: To help customers find products.
+
+### Product Detail Page (for each product)
+- **Product Images**: High-quality images of the product.
+- **Detailed Description**: Comprehensive information about the product.
+- **Specifications**: Technical details and features.
+- **Price and Availability**: Current price and stock status.
+- **Add to Cart Button**: Clear call to action for purchasing.
+- **Customer Reviews**: Section for customer ratings and comments.
+
+### Testimonials Page
+- **Customer Stories**: Detailed accounts of customer experiences.
+- **Ratings Overview**: Aggregate ratings for your products and services.
+
+### FAQ Page
+- **Questions and Answers**: Organized by category for ease of navigation.
+
+### Blog Page
+- **Recent Posts**: Thumbnails and summaries of the latest blog entries.
+- **Categories**: Links to different blog categories.
+- **Archive**: Access to older posts.
+
+### Contact Us Page
+- **Inquiry Form**: Form for customers to fill out with their questions or comments.
+- **Map and Address**: Interactive map and physical address of your store.
+- **Phone and Email**: Direct contact methods.
+
+### Privacy Policy Page
+- **Policy Details**: Information on how customer data is used and protected.
+
+### Terms of Service Page
+- **Terms**: Legal terms and conditions of using your website and services.
+
+### Cart Page
+- **Item List**: Products added to the cart with options to update quantity or remove items.
+- **Price Summary**: Subtotal, shipping, and total cost.
+- **Proceed to Checkout Button**: Leading to the checkout process.
+
+### Checkout Page
+- **Billing Information**: Form to enter billing details.
+- **Shipping Information**: Form to enter shipping details.
+- **Payment Method**: Options for payment.
+- **Order Review**: Final review of the order before submission.
+
+This prototype serves as a blueprint for your website's structure and content. You can further refine each page with specific details and design elements that align with your brand and customer needs. If you need further assistance or specific details for any of these pages, feel free to ask!
+
+Sure! Below is a basic prototype for your WELLMAX LED bulbs business website. This includes HTML structure for the primary pages and sections based on the sitemap.
+
+### Home Page (index.html)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELLMAX LED Bulbs - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WELLMAX LED Bulbs</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="reviews.html">Customer Reviews</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Welcome to WELLMAX LED Bulbs</h2>
+            <p>Discover our range of high-quality LED lighting solutions.</p>
+            <a href="products.html" class="cta-button">Shop Now</a>
+        </section>
+        <section id="introduction">
+            <h2>About Our Products</h2>
+            <p>WELLMAX LED bulbs are designed to provide energy-efficient, long-lasting lighting solutions for your home and business.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WELLMAX LED Bulbs</p>
+    </footer>
+</body>
+</html>
+```
+
+### About Us Page (about.html)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - WELLMAX LED Bulbs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="reviews.html">Customer Reviews</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="company-background">
+            <h2>Our Company</h2>
+            <p>WELLMAX is a leading manufacturer of high-quality LED bulbs, committed to delivering innovative lighting solutions.</p>
+        </section>
+        <section id="team-members">
+            <h2>Meet the Team</h2>
+            <p>Get to know the people behind WELLMAX.</p>
+            <!-- Add team member details here -->
+        </section>
+        <section id="our-story">
+            <h2>Our Story</h2>
+            <p>Learn about our journey and what makes us unique.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WELLMAX LED Bulbs</p>
+    </footer>
+</body>
+</html>
+```
+
+### Products Page (products.html)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - WELLMAX LED Bulbs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="reviews.html">Customer Reviews</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="product-categories">
+            <h2>Product Categories</h2>
+            <ul>
+                <li><a href="#">LED Bulbs</a></li>
+                <li><a href="#">LED Tubes</a></li>
+                <li><a href="#">LED Downlights</a></li>
+                <!-- Add more categories as needed -->
+            </ul>
+        </section>
+        <section id="product-listings">
+            <h2>Product Listings</h2>
+            <!-- Example Product -->
+            <div class="product">
+                <img src="led-bulb.jpg" alt="LED Bulb">
+                <h3>LED Bulb</h3>
+                <p>Description of the LED bulb.</p>
+                <p>Price: $10</p>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WELLMAX LED Bulbs</p>
+    </footer>
+</body>
+</html>
+```
+
+### Services Page (services.html)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - WELLMAX LED Bulbs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="reviews.html">Customer Reviews</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="installation-services">
+            <h2>Installation Services</h2>
+            <p>Details about our installation services.</p>
+        </section>
+        <section id="consultation">
+            <h2>Consultation</h2>
+            <p>Information on consultation services for large projects.</p>
+        </section>
+        <section id="maintenance-support">
+            <h2>Maintenance and Support</h2>
+            <p>Details on post-purchase support and maintenance services.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WELLMAX LED Bulbs</p>
+    </footer>
+</body>
+</html>
+```
+
+### Resources Page (resources.html)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - WELLMAX LED Bulbs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resources</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="reviews.html">Customer Reviews</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="blog">
+            <h2>Blog</h2>
+            <article>
+                <h3>Benefits of LED Lighting</h
+
+3>
+                <p>Article on the benefits of LED lighting.</p>
+            </article>
+            <!-- Add more articles as needed -->
+        </section>
+        <section id="guides-tutorials">
+            <h2>Guides and Tutorials</h2>
+            <article>
+                <h3>Selecting the Right LED Products</h3>
+                <p>Guide on how to select the right LED products.</p>
+            </article>
+            <!-- Add more guides as needed -->
+        </section>
+        <section id="faqs">
+            <h2>FAQs</h2>
+            <p>Answers to frequently asked questions.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WELLMAX LED Bulbs</p>
+    </footer>
+</body>
+</html>
+```
+
+### Contact Us Page (contact.html)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - WELLMAX LED Bulbs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="reviews.html">Customer Reviews</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_contact_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Address: 1234 LED Street, Lahore, Pakistan</p>
+            <p>Phone: +92 123 4567890</p>
+            <p>Email: info@wellmaxled.com</p>
+            <p>Follow us on:</p>
+            <ul>
+                <li><a href="#">Amazon</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">daraz.pk</a></li>
+            </ul>
+        </section>
+        <section id="map">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.990267640637!2d2.294481315673923!3d48.85884407928737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f10f6898bfb%3A0x40b82c3688c9460!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1604873653348!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WELLMAX LED Bulbs</p>
+    </footer>
+</body>
+</html>
+```
+
+### Customer Reviews Page (reviews.html)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - WELLMAX LED Bulbs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Customer Reviews</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="reviews.html">Customer Reviews</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <article>
+                <h3>John Doe</h3>
+                <p>"WELLMAX LED bulbs have transformed my home lighting. Highly recommend!"</p>
+            </article>
+            <!-- Add more testimonials as needed -->
+        </section>
+        <section id="ratings">
+            <h2>Product Ratings</h2>
+            <p>LED Bulb: ★★★★★</p>
+            <p>LED Tube: ★★★★☆</p>
+            <!-- Add more ratings as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WELLMAX LED Bulbs</p>
+    </footer>
+</body>
+</html>
+```
+
+### Shopping Cart Page (cart.html)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - WELLMAX LED Bulbs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="reviews.html">Customer Reviews</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="cart-management">
+            <h2>Your Cart</h2>
+            <!-- Example Cart Item -->
+            <div class="cart-item">
+                <img src="led-bulb.jpg" alt="LED Bulb">
+                <h3>LED Bulb</h3>
+                <p>Price: $10</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1">
+                <button>Remove</button>
+            </div>
+            <!-- Add more cart items as needed -->
+            <div class="cart-summary">
+                <h3>Cart Summary</h3>
+                <p>Total: $10</p>
+                <button>Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WELLMAX LED Bulbs</p>
+    </footer>
+</body>
+</html>
+```
+
+### Privacy Policy and Terms of Service (privacy-policy.html & terms-of-service.html)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - WELLMAX LED Bulbs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Privacy Policy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</
+
+a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="reviews.html">Customer Reviews</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="privacy-policy">
+            <h2>Privacy Policy</h2>
+            <p>Details about our privacy policy.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WELLMAX LED Bulbs</p>
+    </footer>
+</body>
+</html>
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - WELLMAX LED Bulbs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Terms of Service</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="reviews.html">Customer Reviews</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="terms-of-service">
+            <h2>Terms of Service</h2>
+            <p>Details about our terms of service.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WELLMAX LED Bulbs</p>
+    </footer>
+</body>
+</html>
+```
+
+### CSS (styles.css)
+```css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#hero {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+#hero h2 {
+    margin-top: 0;
+}
+
+#hero p {
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.product img {
+    max-width: 100px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.cart-summary {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+```
+
+This prototype provides the basic HTML and CSS structure for your WELLMAX LED bulbs business website. It covers the main pages and sections, ensuring a comprehensive and user-friendly design. You can further customize and expand the content as needed.
